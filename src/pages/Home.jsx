@@ -2,7 +2,7 @@ import React from 'react'
 import '../scss/style.scss';
 import '../js/app';
 import tfImg from '../assets/images/tf-bg.png'
-import tfMobileImg from '../assets/images/red.jpg'
+import tfMobileImg from '../assets/images/purple.jpg'
 import sait from '../assets/images/sait.svg'
 import Event from '../components/Event';
 import Hero from '../components/Hero';
@@ -24,7 +24,7 @@ const Home = () => {
         <img class="w-4" src={sait} alt="sait" />
       </button>
       <img class="fixed-bg" src={tfImg} alt="" />
-      <img class="fixed-bg-mobile" src="https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product_1258-52932.jpg?w=740&t=st=1678823744~exp=1678824344~hmac=89e2848b36cceb44159cac8a94b15c5abad5f96d255793f63756e024dd8dfa5b" alt="" />
+      <img class="fixed-bg-mobile" src={tfMobileImg} alt="" />
     </main>
 
       <section id="home" class="container flex-container">
