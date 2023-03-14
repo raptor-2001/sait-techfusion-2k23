@@ -233,6 +233,19 @@ body:hover > #pointer {
      margin-top:6px;
      z-index: 2;
   }
+
+  @media (max-width:764px) {
+      top: 35%;
+      left: 20%;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      img{
+        height: 100px;
+        width: 100px;
+      }
+
+  }
  
 }
 
@@ -405,14 +418,18 @@ nav{
   position: fixed;
   top: 0;
   z-index: -2;
+  @media (max-width:$breakpoint-tablet) {
+      display: none;
+  }
 }
 
 .fixed-bg-mobile{
   display: none;
   position: fixed;
   background-attachment: fixed;
-  top:0;
+  top:0%;
   z-index: -4;
+  scale: 5;
 
   @media (max-width:$breakpoint-tablet) {
     display: block;
@@ -562,9 +579,7 @@ li .home-icon{
   }
   
   // fixed background
-  .fixed-bg{
-    display: none;
-  }
+  
   // Hero section
   .hero-section{
     padding-top: 1.5rem;
@@ -592,47 +607,6 @@ ion-icon{
 .font-size{
   font-size: 2px;
 }
-
-// // Footer
-// footer{
-//   text-align: center;
-//   color: $bg-white;
-//   background-color: $bg-black;
-
-//   .footer-box{
-//     display: grid;
-//     grid-template-columns: repeat(3,1fr);
-//     align-items: center;
-//     margin-top: 15rem;
-//     height: 45vh;
-
-//     .box-title{
-//       text-transform: uppercase;
-//       text-decoration: underline;
-//       padding-bottom: 2.5rem;
-//     }
-    
-//     }
-  
-//   .home-footer{
-//     margin-top: 50rem !important;
-//   }
-//   .copyright-text{
-//     padding-bottom: 2rem;
-//     font-size: 18px;
-//   }
-//   #year{
-//     font-size: 18px;
-//   }
-
-// }
-
-
-// Responsive Seciton
-
-
-
-// Desktop
 
 
 // Mobile
@@ -770,3 +744,6 @@ $breakpoint-desktop: 980px;
     font-size: 0.7rem;
   }
 }
+
+
+

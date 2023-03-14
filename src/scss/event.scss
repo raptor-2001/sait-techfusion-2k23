@@ -1,0 +1,208 @@
+
+$bg-purple: #e617f9;
+
+/* login-box    */
+
+.login-box {
+  width: 27%;
+  padding-top:10px;
+  padding-right: 20px; 
+  position: fixed;
+  top: 5%;
+  right: 0%;
+  z-index: 2;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: $bg-purple;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: $bg-purple;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px $bg-purple,
+    0 0 25px $bg-purple,
+    0 0 50px $bg-purple,
+    0 0 100px $bg-purple;
+}
+@media (max-width:764px) {
+  .login-box a:focus{
+    background: transparent;
+  } 
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $bg-purple);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, $bg-purple);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,  $bg-purple);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, $bg-purple);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+
+/* media queries */
+
+@media screen and (max-width:768px) {
+  
+  .login-box  {
+    width: fit-content;
+    padding-bottom:10px;
+     
+  }
+
+}
+
+
+
+// Event header
+.event-box{
+  margin: 10px;
+  max-width: 100%;
+}
+.event-header{
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+.event-detail{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    gap: 1rem;
+    padding: 5rem 2rem;
+    .event-rules{
+      width: 100%;
+      border: 2px $bg-purple solid;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      .text-rule{
+        font-size: 1rem;
+      }
+      .rule-li{
+        font-size: 0.7rem;
+      }
+    }
+
+    .event-prizes{
+      border: 2px $bg-purple solid;
+      background-color: #fff;
+      position: relative;
+      .text-prize{
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 1.5rem;
+      }
+      .prize-amount{
+        font-size: 1rem;
+        color: purple;
+      }
+    }
+    @media (max-width: 764px) {
+      grid-template-columns: 1fr;
+    }
+}
+
+
