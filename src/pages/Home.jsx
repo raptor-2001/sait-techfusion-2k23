@@ -1,8 +1,8 @@
 import React from 'react'
 import '../scss/style.scss';
 import '../js/app';
-import tfImg from '../assets/images/tf-bg.png'
-import tfMobileImg from '../assets/images/purple.jpg'
+import tfImg from '../assets/images/tf-bg.webp'
+import tfMobileImg from '../assets/images/purple.webp'
 import sait from '../assets/images/sait.svg'
 import Event from '../components/Event';
 import Hero from '../components/Hero';
