@@ -1,5 +1,8 @@
 import React from 'react'
 import '../scss/event.scss'
+import {IoMdArrowRoundBack} from 'react-icons/io'
+import { Link } from 'react-router-dom'
+
 
 const Techtune = () => {
   return (
@@ -15,8 +18,12 @@ const Techtune = () => {
       </form>
    </div>
    <main className='event-box'>
+      <Link to="/">
+         <IoMdArrowRoundBack/>
+      </Link>
+   
       <div className="event-header">
-         <h2 className='event-title'>Podium</h2>
+         <h2 className='event-title'>Techtune</h2>
       </div>
       <div className="event-detail">
          <div className="event-rules">

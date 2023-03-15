@@ -45,8 +45,8 @@ const Home = () => {
       </section>
     <section className='mb-10' id="support">
       <h1 className=' text-center py-10 text-50 font-bold'>CONTACT US</h1>
-    </section>
       <Support/>
+    </section>
       <Footer/>
 
     </>

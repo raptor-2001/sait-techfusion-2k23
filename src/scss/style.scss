@@ -209,7 +209,9 @@ body:hover > #pointer {
 #pointer {
   display: none;
 }
-
+#event{
+  margin: 2rem;
+}
 // Menu button
 #nav-button{
   color: $bg-purple;
@@ -234,18 +236,7 @@ body:hover > #pointer {
      z-index: 2;
   }
 
-  @media (max-width:764px) {
-      top: 35%;
-      left: 20%;
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      img{
-        height: 100px;
-        width: 100px;
-      }
-
-  }
+  
  
 }
 
@@ -270,21 +261,7 @@ p{
   font-size: 0.5rem;
 }
 
-#home{
-  margin-bottom: 500px;
-}
-#event{
-  margin-bottom: 500px;
-}
-#contact{
-  margin-bottom: 500px;
-}
-#more{
-  margin-bottom: 500px;
-}
-
 // Side Navbar
-
 
 nav{
   display: flex;
@@ -356,11 +333,11 @@ nav{
   nav{
     rotate: -90deg;
     position: fixed;
-    bottom: -46%;
+    bottom: -40%;
     max-width:100%;
     height: 800px;
     left: 34%;
-    top: 44%;
+    top: 48%;
     .navigation{
       max-width: 80%;
       height: 45%;
@@ -442,13 +419,24 @@ nav{
   margin-bottom: 5rem;
   .hero-p{
     font-size:16px;
-    color:$bg-purple;
+    color:$bg-white;
   }
   .hero-title{
     font-size: 3rem;
-    
+    font-weight: bold;
     color: $bg-white;
     font-family:'Roboto',sans-serif;
+  }
+  .hero-description{
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.4rem;
+    display: none;
+    @media (max-width: 764px) {
+        display: block;
+    }
   }
 }
 
@@ -651,10 +639,11 @@ $breakpoint-desktop: 980px;
     }
     .icon{
       font-size: 2.5rem;
-      cursor: pointer;;
+      cursor: pointer;
+      fill: $bg-purple;
       :hover{
         transition: fill 0.5s ease;
-        fill: $bg-purple;
+        fill: $bg-white;
       }
     }
 
@@ -709,13 +698,14 @@ $breakpoint-desktop: 980px;
       display: flex;
       flex-direction: row;
       justify-content: center;
+      color: $bg-purple;
       .footer-icon{
         font-size: 2.5rem;
         padding:0.8rem;
-        cursor: pointer;;
+        cursor: pointer;
+        fill: $bg-white;
         :hover{
           transition: fill 0.5s ease;
-          fill: $bg-purple;
         }
       }
     }

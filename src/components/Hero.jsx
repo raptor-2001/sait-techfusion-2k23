@@ -6,10 +6,14 @@ import '../js/app';
 const Hero = () => {
   return (
     <>
-              {/* <!-- Hero Section --> */}
-              <div class="hero-section text-center">
+        {/* <!-- Hero Section --> */}
+        <div class="hero-section text-center">
           <h2 class="hero-title">TECHFUSION'23</h2>
           <p class="hero-p">Students' Association of Information Technology WCE, Sangli</p>
+          <p className="hero-description">
+              Techfusion is the flagship event organized by SAIT on an annual basis, which comprises a diverse range of technical and non-technical events designed to provide participants with an immersive and rewarding experience. The events have been meticulously structured to ensure that participants derive maximum value from them, while also enjoying themselves to the fullest extent possible.
+          </p>
+
         </div>
         {/* <!-- Countdown --> */}
         <div class="container countdown">

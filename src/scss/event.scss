@@ -11,6 +11,7 @@ $bg-purple: #e617f9;
   top: 5%;
   right: 0%;
   z-index: 2;
+  // background-color:;
 }
 
 .login-box h2 {
@@ -19,6 +20,7 @@ $bg-purple: #e617f9;
   color: #ffffff;
   text-align: center;
 }
+$bg-white: #fff;
 
 .login-box form a {
   position: relative;
@@ -26,9 +28,11 @@ $bg-purple: #e617f9;
   padding: 10px 20px;
   color: $bg-purple;
   font-size: 16px;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
+  background-color:#00000034;
   transition: .5s;
 
   letter-spacing: 4px
@@ -45,7 +49,7 @@ $bg-purple: #e617f9;
 }
 @media (max-width:764px) {
   .login-box a:focus{
-    background: transparent;
+    background: $bg-purple;
   } 
 }
 
