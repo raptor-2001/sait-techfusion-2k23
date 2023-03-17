@@ -55,10 +55,10 @@ const Event = () => {
           </Link>
           <div class="p-5">
               <Link to='/event/duocoding'>
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Duo-Coding</h5>
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CodeDuet</h5>
               </Link>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Duocoding is a pair coding contest with challenging rounds that test teamwork and coding skills. Participants solve complex problems together under time pressure, improving collaboration abilities.
+              CodeDuet is a pair coding contest with challenging rounds that test teamwork and coding skills. Participants solve complex problems together under time pressure, improving collaboration abilities.
               </p>
               <Link to='/event/duocoding' class="inline-flex items-center px-2 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Read more
@@ -75,7 +75,7 @@ const Event = () => {
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bid 2 Build</h5>
               </Link>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Bid to Build is an IPL-style auction event where cricket skills and attentiveness are judged as participants bid for players to build their team. It requires strategic decision-making and cricket knowledge to build a winning team, making it an exciting opportunity to showcase skills and test decision-making abilities.
+              Bid 2 Build is an IPL-style auction event where cricket skills and attentiveness are judged as participants bid for players to build their team. It requires strategic decision-making and cricket knowledge to build a winning team, making it an exciting opportunity to showcase skills and test decision-making abilities.
               </p>
               <Link to='/event/b2b' class="inline-flex items-center px-2 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Read more

@@ -12,9 +12,9 @@ const Footer = () => {
             <div class="footer-item">
                 <h2 className='footer-title'>EVENT RESOURCES</h2>
                 <ul className="footer-link">
-                    <li>
+                    {/* <li>
                          <a target="blank" href="https://drive.google.com/file/d/1th-wp5BwbtxPJmPzfjaARg_Zc1IKebBV/view?usp=sharing" class="footerlinks" > Sponsorship Broucher</a>
-                    </li>
+                    </li> */}
                     <li>
                         <a class="footerlinks" href="#"> Techfusion2k23 Rule Book</a>
                     </li>

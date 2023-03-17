@@ -47,11 +47,7 @@ $bg-white: #fff;
     0 0 50px $bg-purple,
     0 0 100px $bg-purple;
 }
-@media (max-width:764px) {
-  .login-box a:focus{
-    background: $bg-purple;
-  } 
-}
+
 
 .login-box a span {
   position: absolute;
@@ -141,6 +137,10 @@ $bg-white: #fff;
   }
 }
 
+
+.rule-li{
+  margin-bottom: 0.3rem;
+}
 
 /* media queries */
 

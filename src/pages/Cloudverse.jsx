@@ -2,13 +2,14 @@ import React from 'react'
 import '../scss/event.scss'
 import {IoMdArrowRoundBack} from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import trophy from '../assets/images/trophy.webp'
 
 const Cloudverse = () => {
   return (
 <>
    <div class="login-box">
       <form>  
-         <a href="#">
+         <a target="blank" href="https://forms.gle/aUGifCx3ddJ4dgE77">
          <span></span>
          <span></span>
          Register
@@ -18,35 +19,44 @@ const Cloudverse = () => {
    </div>
    <Link to="/">
          <IoMdArrowRoundBack/>
-    </Link>
+   </Link>
    <main className='event-box'>
       <div className="event-header">
-         <h2 className='event-title'>Cloudverse</h2>
+         <h2 className='event-title'>CloudVerse</h2>
       </div>
       <div className="event-detail">
          <div className="event-rules">
-            <h5 className='text-rule text-left p-6'>Rules</h5>
+            <h5 className='text-rule text-left p-6'>Contents</h5>
             <ul className="rule-ul">
                <li className="rule-li">
-                  Rule #1
+                  Basics of cloud computing and why it is need
                </li>
                <li className="rule-li">
-                  Rule #1
+                  Architecture of Cloud
                </li>
                <li className="rule-li">
-                  Rule #1
+                  Cloud service providers, intro to AWS
                </li>
                <li className="rule-li">
-                  Rule #1
+                  Service and deployment models
                </li>
                <li className="rule-li">
-                  Rule #1
+                  Hypervisor
+               </li>
+               <li className="rule-li">
+                  Virtualization
+               </li>
+               <li className="rule-li">
+                  AWS Services such as S3, EC2, VPC, Lambda.
+               </li>
+               <li className="rule-li">
+                  Demo and Hands-on.
                </li>
             </ul>
          </div>
          <div className="event-prizes">
-          <img src="https://img.freepik.com/free-vector/trophy_78370-345.jpg?w=900&t=st=1678788189~exp=1678788789~hmac=49ad88e4dd3280ad805c8f2116dc48babf5260c895a6119b5581fdbf3a4040a9" alt="" />
-          <h3 className="prize-amount text-center">upto $100</h3>
+          <img src={trophy} alt="" />
+          <h3 className="prize-amount text-center">Exciting prizes and goodies</h3>
          </div>
       </div>
       <div className="timeline">
@@ -75,23 +85,59 @@ const Cloudverse = () => {
                class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >Inaugration</a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >Reporting Time</a
+                  >
+                  
+               </div>
+               <div class="mb-4 flex justify-between">
+                  <a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >4th April 2023</a
                   >
                   <a
-                     href="#!"
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >04 / 02 / 2022</a
+                     >9:00 AM</a
                   >
                </div>
-               <p class="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                  scelerisque diam non nisi semper, et elementum lorem ornare.
-                  Maecenas placerat facilisis mollis. Duis sagittis ligula in
-                  sodales vehicula.
-               </p>
+              </div>
+            </div>
+         </li>
+         <li>
+            <div class="flex-start md:flex">
+               <div
+               class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  view:Box="0 0 24 24"
+                  fill="currentColor"
+                  class="h-4 w-4">
+                  <path
+                     fill-rule="evenodd"
+                     d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
+                     clip-rule="evenodd" />
+               </svg>
                </div>
+               <div
+               class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
+               <div class="mb-4 flex justify-between">
+                  <a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >Session I</a
+                  >
+                  
+               </div>
+               <div class="mb-4 flex justify-between">
+                  <a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >4th April 2023</a
+                  >
+                  <a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+                     >9:30 AM</a
+                  >
+               </div>
+              </div>
             </div>
          </li>
          <li>
@@ -113,64 +159,25 @@ const Cloudverse = () => {
                class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >Round 1</a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >Session II</a
                   >
-                  <a
-                     href="#!"
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >12 / 01 / 2022</a
-                  >
+                  
                </div>
-               <p class="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Libero expedita explicabo eius fugiat quia aspernatur autem
-                  laudantium error architecto recusandae natus sapiente sit nam
-                  eaque, consectetur porro molestiae ipsam an deleniti.
-               </p>
-               </div>
-            </div>
-         </li>
-         <li>
-            <div class="flex-start md:flex">
-               <div
-               class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
-               <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-4 w-4">
-                  <path
-                     fill-rule="evenodd"
-                     d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                     clip-rule="evenodd" />
-               </svg>
-               </div>
-               <div
-               class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >
-                  Round 2
-                  </a>
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >4th April 2023</a
+                  >
                   <a
-                     href="#!"
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >21 / 12 / 2021</a
+                     >1:30 PM</a
                   >
                </div>
-               <p class="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Voluptatibus temporibus esse illum eum aspernatur, fugiat
-                  suscipit natus! Eum corporis illum nihil officiis tempore.
-                  Excepturi illo natus libero sit doloremque, laborum molestias
-                  rerum pariatur quam ipsam necessitatibus incidunt, explicabo.
-               </p>
-               </div>
+              </div>
             </div>
          </li>
-         </ol>
+        </ol>
       </div>
       
       <div className="faq">

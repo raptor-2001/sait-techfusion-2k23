@@ -2,15 +2,15 @@ import React from 'react'
 import '../scss/event.scss'
 import {IoMdArrowRoundBack} from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import trophy from '../assets/images/trophy.webp'
 
 const Bid2Build = () => {
   return (
 <>
-
-  
    <div class="login-box">
       <form>  
-         <a href="#">
+         <a target="blank" href="https://forms.gle/srTmXKi62StnG6M29
+">
          <span></span>
          <span></span>
          Register
@@ -30,25 +30,22 @@ const Bid2Build = () => {
             <h5 className='text-rule text-left p-6'>Rules</h5>
             <ul className="rule-ul">
                <li className="rule-li">
-                  Rule #1
+                  Rule#1: Event is an fully offline and a day long event. 
                </li>
                <li className="rule-li">
-                  Rule #1
+                  Rule#2: Event consist of two round.
                </li>
                <li className="rule-li">
-                  Rule #1
+                  Rule#3: Round 1 is a buzzer round has elimination criteria.
                </li>
                <li className="rule-li">
-                  Rule #1
-               </li>
-               <li className="rule-li">
-                  Rule #1
+                  Rule#4: Round 2 is an auction and the final round of the event.
                </li>
             </ul>
          </div>
          <div className="event-prizes">
-          <img src="https://img.freepik.com/free-vector/trophy_78370-345.jpg?w=900&t=st=1678788189~exp=1678788789~hmac=49ad88e4dd3280ad805c8f2116dc48babf5260c895a6119b5581fdbf3a4040a9" alt="" />
-          <h3 className="prize-amount text-center">upto $100</h3>
+          <img src={trophy} alt="" />
+          <h3 className="prize-amount text-center">Prizes and goodies upto 10k ₹</h3>
          </div>
       </div>
       <div className="timeline">
@@ -77,23 +74,22 @@ const Bid2Build = () => {
                class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >Inaugration</a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >Reporting time</a
+                  >
+                  
+               </div>
+               <div class="mb-4 flex justify-between">
+                  <a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >2nd April 2023</a
                   >
                   <a
-                     href="#!"
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >04 / 02 / 2022</a
+                     >9:30 AM</a
                   >
                </div>
-               <p class="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                  scelerisque diam non nisi semper, et elementum lorem ornare.
-                  Maecenas placerat facilisis mollis. Duis sagittis ligula in
-                  sodales vehicula.
-               </p>
-               </div>
+              </div>
             </div>
          </li>
          <li>
@@ -115,22 +111,22 @@ const Bid2Build = () => {
                class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >Round 1 : Fastest to win </a
+                  >
+                  
+               </div>
+               <div class="mb-4 flex justify-between">
+                  <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >Round 1</a
+                     >2nd April 2023</a
                   >
                   <a
-                     href="#!"
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >12 / 01 / 2022</a
+                     >10:00 AM</a
                   >
                </div>
-               <p class="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Libero expedita explicabo eius fugiat quia aspernatur autem
-                  laudantium error architecto recusandae natus sapiente sit nam
-                  eaque, consectetur porro molestiae ipsam an deleniti.
-               </p>
-               </div>
+              </div>
             </div>
          </li>
          <li>
@@ -152,26 +148,25 @@ const Bid2Build = () => {
                class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >
-                  Round 2
-                  </a>
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >Round 2 : Dream Team</a
+                  >
+                  
+               </div>
+               <div class="mb-4 flex justify-between">
                   <a
-                     href="#!"
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >21 / 12 / 2021</a
+                     >2nd April 2023</a
+                  >
+                  <a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+                     >1:00 PM</a
                   >
                </div>
-               <p class="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Voluptatibus temporibus esse illum eum aspernatur, fugiat
-                  suscipit natus! Eum corporis illum nihil officiis tempore.
-                  Excepturi illo natus libero sit doloremque, laborum molestias
-                  rerum pariatur quam ipsam necessitatibus incidunt, explicabo.
-               </p>
-               </div>
+              </div>
             </div>
          </li>
+
          </ol>
       </div>
       
