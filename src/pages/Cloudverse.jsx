@@ -70,7 +70,7 @@ const Cloudverse = () => {
          </div>
          <div className="event-prizes">
           <img src={trophy} alt="" />
-          <h3 className="prize-amount text-center">Exciting prizes and goodies</h3>
+          <h3 className="prize-amount text-center">Prizes and goodies</h3>
          </div>
       </div>
       <h3
