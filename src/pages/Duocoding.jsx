@@ -1,15 +1,24 @@
-import React from 'react'
-import '../scss/event.scss'
+import React, { useEffect } from 'react'
+import '../scss/event.scss' 
 import {IoMdArrowRoundBack} from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import trophy from '../assets/images/trophy.webp'
 
 const Duocoding = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+  
+      // Clean up function
+      return () => {
+        window.scrollTo(0, 0);
+      };
+    }, []);
+  
   return (
 <>
    <div class="login-box">
       <form>  
-         <a target="blank" href="https://forms.gle/wUMeoCSBSqsxzHPj6">
+         <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfj83BKl5wqXQGwVBJh7NY7gYT-M-wdbUtCS8jExXDbpRAuvw/viewform">
          <span></span>
          <span></span>
          Register
@@ -20,42 +29,47 @@ const Duocoding = () => {
    <Link to="/">
          <IoMdArrowRoundBack/>
    </Link>
-   <main className='event-box'>
+   <div className='event-box'>
       <div className="event-header">
          <h2 className='event-title'>CodeDuet</h2>
       </div>
       <div className="event-detail">
          <div className="event-rules">
-            <h5 className='text-rule text-left p-6'>Rules</h5>
+            <h5 className='text-rule text-center p-6'>Rules</h5>
             <ul className="rule-ul">
                <li className="rule-li">
-                  Rule#1: Contest will be conducted in three rounds and each will be an elimination round. 
+               Contest will be conducted in three rounds and each will be an elimination round
                </li>
                <li className="rule-li">
-                  Rule#2: Round 1 will be conventional coding contest held on HackerRank.
+               Round 1 will be conventional coding contest held on HackerRank
                </li>
                <li className="rule-li">
-                  Rule#3: Round 2 will be reverse coding round held on HackerRank. Details of round are mentioned in the Rule Book.
+               Round 2 will be reverse coding round held on HackerRank. Details of round are mentioned in the Rule Book
                </li>
                <li className="rule-li">
-                  Rule#4: Round 3 will be debugging contest. Further details will be shared on the spot.
+               Round 3 will be debugging contest. Further details will be shared on the spot
+               </li>
+               <li className="rule-li">
+                  For more details please check out the rule book <a className='rule-link' href='https://www.linkedin.com/company/wcesait/mycompany/'>Techfuison2k23 Rule book</a>
                </li>
             </ul>
          </div>
          <div className="event-prizes">
           <img src={trophy} alt="" />
-          <h3 className="prize-amount text-center">Will be disclosed soon.</h3>
+          <h3 className="prize-amount text-center">Prizes and goodies upto 10k ₹</h3>
          </div>
       </div>
-      <div className="timeline">
+      
       <h3
-      class="mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+      class=" mt-6 mb-6 mr-5 text-2xl text-center text-neutral-700 dark:text-neutral-300">
       Event Timeline
       </h3>
-
-         <ol class="border-l-2 border-info-100">
+      <div className="timeline flex justify-center">
+      <h3
+      class="mb-6 mr-5 text-2xl font-bold text-neutral-700 dark:text-neutral-300">      </h3>
+         <ol class=" border-l-2 border-info-100">
          <li>
-            <div class="flex-start md:flex">
+            <div class="flex-start  md:flex ">
                <div
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
@@ -74,13 +88,13 @@ const Duocoding = () => {
                <div class="mb-4 flex justify-between">
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
-                     >Round 1 : Conventinal Coding</a
+                     >Round 1 : Classical Coding</a
                   >
                   
                </div>
                <div class="mb-4 flex justify-between">
                   <a
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
                      >1st April 2023</a
                   >
                   <a
@@ -97,7 +111,7 @@ const Duocoding = () => {
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+                  view:Box="0 0 24 24"
                   fill="currentColor"
                   class="h-4 w-4">
                   <path
@@ -117,7 +131,7 @@ const Duocoding = () => {
                </div>
                <div class="mb-4 flex justify-between">
                   <a
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
                      >1st April 2023</a
                   >
                   <a
@@ -148,32 +162,26 @@ const Duocoding = () => {
                <div class="mb-4 flex justify-between">
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
-                     >Round 3 : Code Debugging </a
+                     >Round 3 : Code Debugging</a
                   >
                   
                </div>
                <div class="mb-4 flex justify-between">
                   <a
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
                      >1st April 2023</a
                   >
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >4:00 PM</a
+                     >4:15 PM</a
                   >
                </div>
               </div>
             </div>
          </li>
-         
-         
          </ol>
       </div>
-      
-      <div className="faq">
-            
-      </div>
-  </main>
+  </div>
 </>
   )
 }

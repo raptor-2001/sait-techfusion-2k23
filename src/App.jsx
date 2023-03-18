@@ -21,7 +21,7 @@ function App() {
         <Route path='/event/codecrush' element={<Codecrush/>} />
         <Route path='/event/cloudverse' element={<Cloudverse/>} />
         <Route path='/event/techtune' element={<Techtune/>} />
-        <Route path='/event/duocoding' element={<Duocoding/>} />
+        <Route path='/event/codeduet' element={<Duocoding/>} />
       </Routes>
     </>
   )

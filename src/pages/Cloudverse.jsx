@@ -59,15 +59,16 @@ const Cloudverse = () => {
           <h3 className="prize-amount text-center">Exciting prizes and goodies</h3>
          </div>
       </div>
-      <div className="timeline">
       <h3
-      class="mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+      class=" mt-6 mb-6 mr-5 text-2xl text-center text-neutral-700 dark:text-neutral-300">
       Event Timeline
       </h3>
-
-         <ol class="border-l-2 border-info-100">
+      <div className="timeline flex justify-center">
+      <h3
+      class="mb-6 mr-5 text-2xl font-bold text-neutral-700 dark:text-neutral-300">      </h3>
+         <ol class=" border-l-2 border-info-100">
          <li>
-            <div class="flex-start md:flex">
+            <div class="flex-start  md:flex ">
                <div
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
@@ -86,7 +87,7 @@ const Cloudverse = () => {
                <div class="mb-4 flex justify-between">
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
-                     >Reporting Time</a
+                     >Reporting time</a
                   >
                   
                </div>
@@ -104,12 +105,12 @@ const Cloudverse = () => {
             </div>
          </li>
          <li>
-            <div class="flex-start md:flex">
+            <div class="flex-start  md:flex ">
                <div
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  view:Box="0 0 24 24"
+                  viewBox="0 0 24 24"
                   fill="currentColor"
                   class="h-4 w-4">
                   <path
@@ -141,7 +142,7 @@ const Cloudverse = () => {
             </div>
          </li>
          <li>
-            <div class="flex-start md:flex">
+            <div class="flex-start  md:flex ">
                <div
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
@@ -177,7 +178,7 @@ const Cloudverse = () => {
               </div>
             </div>
          </li>
-        </ol>
+         </ol>
       </div>
       
       <div className="faq">

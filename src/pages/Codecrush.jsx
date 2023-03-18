@@ -1,15 +1,24 @@
-import React from 'react'
-import '../scss/event.scss'
+import React, { useEffect } from 'react'
+import '../scss/event.scss' 
 import {IoMdArrowRoundBack} from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import trophy from '../assets/images/trophy.webp'
 
 const Codecrush = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+  
+      // Clean up function
+      return () => {
+        window.scrollTo(0, 0);
+      };
+    }, []);
+  
   return (
 <>
    <div class="login-box">
       <form>  
-         <a target="blank" href="https://forms.gle/Pc3EQbdxyfxeAVxd9">
+         <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc3jKL6r4KznEZSFEK4_A3KglJA1iPkOeNClKHY-J1b9C3z2A/viewform">
          <span></span>
          <span></span>
          Register
@@ -20,42 +29,47 @@ const Codecrush = () => {
    <Link to="/">
          <IoMdArrowRoundBack/>
    </Link>
-   <main className='event-box'>
+   <div className='event-box'>
       <div className="event-header">
          <h2 className='event-title'>CodeCrush</h2>
       </div>
       <div className="event-detail">
          <div className="event-rules">
-            <h5 className='text-rule text-left p-6'>Rules</h5>
+            <h5 className='text-rule text-center p-6'>Rules</h5>
             <ul className="rule-ul">
                <li className="rule-li">
-                  Rule#1: Contest will be conducted in online mode on HackerRank.
+               Contest will be conducted in online mode on HackerRank
                </li>
                <li className="rule-li">
-                  Rule#2: Contest has two tracks Novice and Expert. Novice constist on FY and Expert has SY, TY and Final Year.
+               Contest has two tracks Novice and Expert. Novice constist on FY and Expert has SY, TY and Final Year
                </li>
                <li className="rule-li">
-                  Rule#3: Duration of contest will be 2 hours.
+               Duration of contest will be 2 hours
                </li>
                <li className="rule-li">
-                  Rule#4: The top four performers will receive prizes, with a special recognition awarded to the top female participant.
+               The top four performers will receive prizes, with a special recognition awarded to the top female participant
+               </li>
+               <li className="rule-li">
+                  For more details please check out the rule book <a className='rule-link' href='https://www.linkedin.com/company/wcesait/mycompany/'>Techfuison2k23 Rule book</a>
                </li>
             </ul>
          </div>
          <div className="event-prizes">
           <img src={trophy} alt="" />
-          <h3 className="prize-amount text-center">Will be disclosed soon.</h3>
+          <h3 className="prize-amount text-center">Prizes and goodies will be disclosed soon </h3>
          </div>
       </div>
-      <div className="timeline">
+      
       <h3
-      class="mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+      class=" mt-6 mb-6 mr-5 text-2xl text-center text-neutral-700 dark:text-neutral-300">
       Event Timeline
       </h3>
-
-         <ol class="border-l-2 border-info-100">
+      <div className="timeline flex justify-center">
+      <h3
+      class="mb-6 mr-5 text-2xl font-bold text-neutral-700 dark:text-neutral-300">      </h3>
+         <ol class=" border-l-2 border-info-100">
          <li>
-            <div class="flex-start md:flex">
+            <div class="flex-start  md:flex ">
                <div
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
@@ -74,14 +88,14 @@ const Codecrush = () => {
                <div class="mb-4 flex justify-between">
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
-                     >Online Round : Competitive Coding</a
+                     >Reporting time</a
                   >
                   
                </div>
                <div class="mb-4 flex justify-between">
                   <a
-                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >3rd April 2023</a
+                     class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
+                     >2nd April 2023</a
                   >
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
@@ -93,11 +107,7 @@ const Codecrush = () => {
          </li>
          </ol>
       </div>
-      
-      <div className="faq">
-            
-      </div>
-  </main>
+  </div>
 </>
   )
 }

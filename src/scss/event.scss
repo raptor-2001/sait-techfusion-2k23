@@ -8,7 +8,7 @@ $bg-purple: #e617f9;
   padding-top:10px;
   padding-right: 20px; 
   position: fixed;
-  top: 5%;
+  top: 15%;
   right: 0%;
   z-index: 2;
   // background-color:;
@@ -140,8 +140,14 @@ $bg-white: #fff;
 
 .rule-li{
   margin-bottom: 0.3rem;
+  list-style: disc;
 }
 
+.rule-link{
+  font-size: 0.7rem;
+  text-decoration: underline;
+  color: $bg-purple;
+}
 /* media queries */
 
 @media screen and (max-width:768px) {
@@ -177,11 +183,17 @@ $bg-white: #fff;
     margin: auto;
     gap: 1rem;
     padding: 5rem 2rem;
+    @media (max-width: 768px) {
+      padding: 0.8rem;
+    }
     .event-rules{
       width: 100%;
       border: 2px $bg-purple solid;
       border-radius: 10px;
       padding: 1rem 2rem;
+      @media (max-width: 768px) {
+        padding: 1.5rem;
+      }
       .text-rule{
         font-size: 1rem;
       }

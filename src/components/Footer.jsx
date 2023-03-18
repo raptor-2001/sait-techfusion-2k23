@@ -39,12 +39,12 @@ const Footer = () => {
                 <h2 className='footer-title'>STAY CONNECTED</h2>
                 <ul class="footer-ul-icon">
                     <li className='footer-icon'>
-                       <a target="_blank" href="https://react-icons.github.io/react-icons/search?q=ins">
+                       <a target="_blank" href="https://www.linkedin.com/company/wcesait/mycompany/">
                          <FaLinkedinIn className='icon'/>
                        </a>
                     </li>
                     <li className='footer-icon'>
-                      <a target="_blank" href="https://react-icons.github.io/react-icons/search?q=ins">
+                      <a target="_blank" href="https://www.instagram.com/wce_sait/?hl=en">
                           <BsInstagram className='icon'/>
                       </a>
                     </li>

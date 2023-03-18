@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../scss/event.scss' 
 import {IoMdArrowRoundBack} from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import trophy from '../assets/images/trophy.webp'
 
-
 const Podium = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+  
+      // Clean up function
+      return () => {
+        window.scrollTo(0, 0);
+      };
+    }, []);
+  
   return (
 <>
    <div class="login-box">
@@ -21,40 +29,45 @@ const Podium = () => {
    <Link to="/">
          <IoMdArrowRoundBack/>
    </Link>
-   <main className='event-box'>
+   <div className='event-box'>
       <div className="event-header">
          <h2 className='event-title'>Podium</h2>
       </div>
       <div className="event-detail">
          <div className="event-rules">
-            <h5 className='text-rule text-left p-6'>Rules</h5>
+            <h5 className='text-rule text-center p-6'>Rules</h5>
             <ul className="rule-ul">
                <li className="rule-li">
-                  Rule#1: Image Opinion Round 1 is a mandatory round for all participants to qualify for Round 2.
+                  Image Opinion Round 1 is a mandatory round for all participants to qualify for Round 2.
                </li>
                <li className="rule-li">
-                  Rule#2: For round 2, a group of 3 participants will be formed.
-The group will debate and tell their opinion on the topic
+                  For round 2, a group of 3 participants will be formed.
+                  The group will debate and tell their opinion on the topic
                </li>
                <li className="rule-li">
-                  Rule#3: Open for all
+                  Open for all
+               </li>
+               <li className="rule-li">
+                  For more details please check out the rule book <a className='rule-link' href='https://www.linkedin.com/company/wcesait/mycompany/'>Techfuison2k23 Rule book</a>
                </li>
             </ul>
          </div>
          <div className="event-prizes">
           <img src={trophy} alt="" />
-          <h3 className="prize-amount text-center">Prizes and goodies upto 10k ₹</h3>
+          <h3 className="prize-amount text-center">Prizes and goodies upto 6k ₹</h3>
          </div>
       </div>
-      <div className="timeline">
+      
       <h3
-      class="mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+      class=" mt-6 mb-6 mr-5 text-2xl text-center text-neutral-700 dark:text-neutral-300">
       Event Timeline
       </h3>
-
-         <ol class="border-l-2 border-info-100">
+      <div className="timeline flex justify-center">
+      <h3
+      class="mb-6 mr-5 text-2xl font-bold text-neutral-700 dark:text-neutral-300">      </h3>
+         <ol class=" border-l-2 border-info-100">
          <li>
-            <div class="flex-start md:flex">
+            <div class="flex-start  md:flex ">
                <div
                class="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
                <svg
@@ -166,11 +179,7 @@ The group will debate and tell their opinion on the topic
          </li>
          </ol>
       </div>
-      
-      <div className="faq">
-            
-      </div>
-  </main>
+  </div>
 </>
   )
 }
