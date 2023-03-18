@@ -16,7 +16,8 @@ const Footer = () => {
                          <a target="blank" href="https://drive.google.com/file/d/1th-wp5BwbtxPJmPzfjaARg_Zc1IKebBV/view?usp=sharing" class="footerlinks" > Sponsorship Broucher</a>
                     </li> */}
                     <li>
-                        <a class="footerlinks" href="#"> Techfusion2k23 Rule Book</a>
+                        <a class="footerlinks" href="https://drive.google.com/drive/folders/1t_SPtlBTfWi1dPMP2RD04LOl8TGlC59p?usp=sharing
+"> Techfusion2k23 Rule Book</a>
                     </li>
                 </ul>
                 

@@ -53,7 +53,7 @@ const Codecrush = () => {
                The top four performers will receive prizes, with a special recognition awarded to the top female participant
                </li>
                <li className="rule-li">
-                  For more details please check out the rule book <a className='rule-link' href='https://www.linkedin.com/company/wcesait/mycompany/'>Techfuison2k23 Rule book</a>
+                  For more details please check out the rule book <a className='rule-link' target="_blank" href='https://drive.google.com/drive/folders/1t_SPtlBTfWi1dPMP2RD04LOl8TGlC59p?usp=sharing'>Techfuison2k23 Rule book</a>
                </li>
             </ul>
          </div>
@@ -89,9 +89,10 @@ const Codecrush = () => {
                <div
                class="ml-6 mb-10 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
                <div class="mb-4 flex justify-between">
+               
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
-                     >Reporting time</a
+                     >Online Contest time</a
                   >
                   
                </div>

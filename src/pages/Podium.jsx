@@ -48,7 +48,8 @@ const Podium = () => {
                   Open for all
                </li>
                <li className="rule-li">
-                  For more details please check out the rule book <a className='rule-link' href='https://www.linkedin.com/company/wcesait/mycompany/'>Techfuison2k23 Rule book</a>
+                  For more details please check out the rule book <a className='rule-link' target="_blank" href='https://drive.google.com/drive/folders/1t_SPtlBTfWi1dPMP2RD04LOl8TGlC59p?usp=sharing
+'>Techfuison2k23 Rule book</a>
                </li>
             </ul>
          </div>
