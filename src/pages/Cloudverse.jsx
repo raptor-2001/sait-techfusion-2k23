@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../scss/event.scss'
 import {IoMdArrowRoundBack} from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import trophy from '../assets/images/trophy.webp'
 
+
 const Cloudverse = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+  
+      // Clean up function
+      return () => {
+        window.scrollTo(0, 0);
+      };
+    }, []);
+  
   return (
 <>
    <div class="login-box">
