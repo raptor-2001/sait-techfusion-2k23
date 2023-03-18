@@ -41,7 +41,10 @@ const Codecrush = () => {
                Contest will be conducted in online mode on HackerRank
                </li>
                <li className="rule-li">
-               Contest has two tracks Novice and Expert. Novice constist on FY and Expert has SY, TY and Final Year
+               Contest has two tracks Novice and Expert. Novice consist of FY : Degree & FY, SY : Diploma 
+               </li>
+               <li className="rule-li">
+               Expert has SY, TY and Final Year: Degree & TY : Diploma
                </li>
                <li className="rule-li">
                Duration of contest will be 2 hours

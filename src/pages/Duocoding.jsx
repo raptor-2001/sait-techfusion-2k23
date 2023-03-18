@@ -173,7 +173,7 @@ const Duocoding = () => {
                   >
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                     >4:15 PM</a
+                     >4:30 PM</a
                   >
                </div>
               </div>
