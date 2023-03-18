@@ -57,7 +57,7 @@ const Bid2Build = () => {
          </div>
          <div className="event-prizes">
           <img src={trophy} alt="" />
-          <h3 className="prize-amount text-center">Prizes and goodies</h3>
+          <h3 className="prize-amount text-center">Prizes will be disclosed soon in a week</h3>
          </div>
       </div>
       
