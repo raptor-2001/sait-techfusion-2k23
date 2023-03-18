@@ -53,7 +53,7 @@ const Footer = () => {
 
         </div>
         <div class="copyright">
-            Copyright{<MdOutlineCopyright className='copy'/>}2023 Alrights are reserved to SAIT
+            Copyright{<MdOutlineCopyright className='copy'/>}2023 Alrights reserved to SAIT
         </div>
         
     </>

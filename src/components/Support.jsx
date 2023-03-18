@@ -12,7 +12,7 @@ const Support = () => {
            <p className='content-description'>
               For any general inquiries related to our events, please do not hesitate to email us. We would be more than happy to assist you with any questions or concerns you may have.
            </p>
-           <h2 className='content'>wcesait@walchandsangli.ac.in</h2>
+           <h2 className='content'>wce.sait@walchandsangli.ac.in</h2>
         </div>
       </div>
       <div class="container-item">

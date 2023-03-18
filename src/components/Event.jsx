@@ -15,7 +15,7 @@ const Event = () => {
       {/* {eventCard.map(event => (
         <EventCard key={event.id} img={event.image} title={event.title} description={event.description} link={event.link}/>
       ))} */}
-      <div class=" m-2 max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class="m-2 max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <Link to='/event/podium'>
               <img class="rounded-t-lg" src={podium} alt="" />
           </Link>
