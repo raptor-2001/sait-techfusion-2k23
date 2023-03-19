@@ -40,7 +40,7 @@ const Footer = () => {
                 <h2 className='footer-title'>STAY CONNECTED</h2>
                 <ul class="footer-ul-icon">
                     <li className='footer-icon'>
-                       <a target="_blank" href="https://www.linkedin.com/company/wcesait/mycompany/">
+                       <a target="_blank" href="https://www.linkedin.com/in/wcesait/">
                          <FaLinkedinIn className='icon'/>
                        </a>
                     </li>
