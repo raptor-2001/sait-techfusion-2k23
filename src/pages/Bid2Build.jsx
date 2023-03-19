@@ -126,9 +126,8 @@ const Bid2Build = () => {
                <div class="mb-4 flex justify-between">
                   <a
                      class="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700 mr-5"
-                     >Round 1 : Fastest to win</a
+                     >Round 1 : Team Retention</a
                   >
-                  
                </div>
                <div class="mb-4 flex justify-between">
                   <a
