@@ -24,7 +24,7 @@ const Support = () => {
            <p className='content-description'>
            Please feel free to reach out to us via WhatsApp, and we will make every effort to promptly respond to your message.
            </p>
-           <h2 className='content'>+91-7058492414</h2>
+           <h2 className='content'>Pratham Yadav: +91-7058492414</h2>
         </div>
       </div>
     </div>

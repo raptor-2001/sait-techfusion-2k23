@@ -10,6 +10,7 @@ import Navbar from '../components/Navbar';
 import Support from '../components/Support';
 import Footer from '../components/Footer';
 import Sponsors from '../components/Sponsors';
+import About from '../components/About';
 
 
 
@@ -42,6 +43,8 @@ const Home = () => {
             Sponsors
           </h1> */}
           {/* <Sponsors/> */}
+          <h1 className=' text-center py-10 text-50 font-bold'>ABOUT US</h1>
+          <About/>
       </section>
     <section className='mb-10' id="support">
       <h1 className=' text-center py-10 text-50 font-bold'>CONTACT US</h1>
